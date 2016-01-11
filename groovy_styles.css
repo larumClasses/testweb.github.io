@@ -1,0 +1,125 @@
+/* styles for Saint Ann's Computer Center Website 
+	revised 22 Jan 2014 by mjr to be more readable (multi-line) and 
+		to remove stray ";" outside of comment css error
+	revised 24 feb 2005 by mjr to include funky lists ...
+	
+	note: "background" is a 'shorthand' property for multiple info.
+	example      "background: red url(chess.png) 50% repeat fixed" */
+
+body {
+	font-family:"Times New Roman",serif;  
+	font-size:1em;  
+	background-color:#9c9;
+	/* 9c9=light grey green; cf9=light green; 9cf light bluegray, was fc6 butterscotch */
+}
+
+
+p {
+	text-indent:2em;
+	background:yellow;
+	font-family:courier, monospace;
+	font-weight:bold; 
+}
+
+
+p.docdate {
+	font-family:Helvetica,sans-serif;
+	font-size:.85em;
+	text-align:right;
+	background:yellow;
+}
+
+
+h1 {
+	color:#000099;
+	font-size:3em;
+	font-family:gill,helvetica,sans-serif;
+}
+
+
+h2 {
+	color:#000066;
+	font-size:2em;
+	font-family:impact,sans-serif;
+}
+
+
+.codesample {
+	font-family:courier,monospace;
+	font-weight:bold;
+}
+
+
+div.box {
+	border:solid;
+	border-width:thin;
+	width:100%;
+}
+
+
+.docdate {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .85em;
+	text-align: right;
+	border-top: thin solid red;
+}
+
+
+article { background-color:#9cf; } /* 9cf = light blue */
+
+
+header {
+	font-size:0.8em;
+	border: 1px solid green;
+	background-color: #9cc; /* 9cc = light grey green */
+	/* position:fixed; */
+	/* padding: 0.1em /* 0.2em 0.1em 0.3em;*/
+	/* top:0; /* leftovers pre html5, needed this or else disappears */
+}
+
+
+footer { 
+	border: 1px solid red ;
+	background-color: #9cc; /* 9cc=light grey green; f9c=pink */
+	/* position:fixed; bottom:0; /* leftovers pre html5,  */
+}
+
+
+/* following are for lists which appear on one line.
+(These used to be #horizlist   and chosen by <li id="horizlist"> 
+but the drawback with using id is that id's have to be unique on the page, so you're allowed only one
+id=horizlist on a page but as many class="horizlist" as you want.)
+To use them, say  <ul class="horizlist">  and then <li> or <li class="here"> */
+.horizlist { margin: 0; /*padding: 0 1px 1px; */ margin-left: 0; font-weight:bold; font-family: Verdana, sans-serif; }
+
+
+.horizlist li { 
+	list-style: none; 
+	margin: 0; 
+	border-top: 1px solid gray; 
+	display: inline; 
+	padding: 0.1em 0.2em 0.1em 0.3em;  
+	border-left: 0.1em solid #CCC   /* was #AAB; */  
+}
+
+
+.horizlist li a { 
+	background: #CDC; /* was CCD */
+	/* padding: 0.1em 0.2em 0.1em 0.3em; border-left: 0.5em solid #AAB; */
+	/* text-decoration: none; */ 
+}
+
+
+.horizlist li a:link { color: #333; }
+.horizlist li a:visited { color: #669; }
+.horizlist li a:active  { color: #69C; }
+.horizlist li a:hover { border-color: #FE3; color: #FFF; background: #332; }
+
+.here a:link, .here a:visited, .here a:hover {
+	border: 1px solid #333;
+	background-color: #F6F;
+	border-left: 0.5em solid #996;
+	background-image: url(images/l1_over.gif);
+	color: #333;
+}
+/* Comment: End of style file */
